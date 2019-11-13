@@ -1,0 +1,38 @@
+//Loops - For loop with multiplication table
+        static void Main(string[] args)
+        {
+            int[] myArr = new int[10];
+
+            for (int i = 0;  i < myArr.Length; i++)
+            {
+               //Multiplication table for 2
+               myArr[i] = 2 * (i + 1);
+            }
+
+            for (int i = 0; i < myArr.Length; i++)
+            {
+                Console.WriteLine("2 x {0} = {1}",i+1,myArr[i]);
+            }
+
+        }
+
+//Truth table
+        static void Main(string[] args)
+        {
+            bool a = true;
+            bool b = true;
+
+            //Test of logical Or "||"
+            //Evaluates to true unless both a and b are false
+            //if (a || b)
+            //{
+            //    Console.WriteLine("Evaluates to true");
+            //}
+            //Test of logical Or "||"
+            //Evaluates to true unless both a and b are false
+            if (a && b)
+            {
+                Console.WriteLine("Evaluates to true");
+            }
+            Console.WriteLine("Hello World!");
+        }
