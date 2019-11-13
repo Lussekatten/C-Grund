@@ -1,0 +1,63 @@
+        static void Main(string[] args)
+        {
+            //Young people get 25% discout
+            //Older people get 50% discount
+            int upperAgeLimit = 65;
+            int lowerAgeLimit = 16;
+            double ticketPrice = 140;
+
+            //Ask user about the age
+            Console.Write("What is your age?: ");
+
+            //Store the age in a variable of the corret data type
+            int userInput = int.Parse(Console.ReadLine());
+
+            //Check if the age is lower or equal to 16 (lowerAgeLimit)
+            //If it is, execute the following statements inside the curly braces
+            if (userInput <= lowerAgeLimit)
+            {
+                ticketPrice = ticketPrice * 0.75;
+            }
+            //The else branch is executed when the expression inside the if statement evaluates to false
+            else
+            {
+                //Check if the age is lower or equal to 16 (lowerAgeLimit)
+                //If it is, execute the following statements inside the curly braces
+                if (userInput >= upperAgeLimit)
+                {
+                    ticketPrice = ticketPrice * 0.5;
+                }
+            }
+            //if (userInput >= upperAgeLimit)
+            //{
+            //    ticketPrice = ticketPrice * 0.5;
+            //}
+
+            Console.WriteLine("Full ticket price is: 140");
+            Console.WriteLine("Your ticket price is: {0}", ticketPrice);
+        }
+
+//---------- OBS! Annat projekt -------------------
+       static void Main(string[] args)
+        {
+            int counter = 0;
+
+            counter++;
+            
+            Console.Write("Ange namn: ");
+            string userInput = Console.ReadLine();
+            Console.WriteLine("Ditt namn är: {0} och värdet på din räknare blev {1}",userInput,counter);
+        }
+//---------- OBS! Annat projekt -------------------
+       static void Main(string[] args)
+        {
+            Console.Write("Please enter your first number: ");
+            int userInput1 = int.Parse(Console.ReadLine());
+            Console.Write("Please enter your second number: ");
+            int userInput2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("No.1: {0} and No.2: {1}",userInput1,userInput2);
+            int sum = userInput1 + userInput2;
+            Console.WriteLine("The sum is: {0}",sum);
+            int ratio = userInput1 / userInput2;
+            Console.WriteLine("The Ratio is: {0}", ratio);
+        }
