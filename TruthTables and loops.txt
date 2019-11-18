@@ -28,8 +28,8 @@
             //{
             //    Console.WriteLine("Evaluates to true");
             //}
-            //Test of logical Or "||"
-            //Evaluates to true unless both a and b are false
+            //Test of logical And "&&"
+            //Evaluates to true only when both a and b are true
             if (a && b)
             {
                 Console.WriteLine("Evaluates to true");
