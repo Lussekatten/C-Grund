@@ -1,0 +1,45 @@
+using System;
+
+namespace Methods
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DisplayMenu();
+
+            int p1 = 3;
+            int p2 = 4;
+            int p3 = 7;
+            double average = CalculateAverage(p1, p2, p3);
+            int sum = AddNumbers(p1, p2, p3);
+            Console.WriteLine("The average is: {0:0.00}", average);
+            Console.WriteLine("The sum of {0}, {1}, and {2} is: {3}", p1, p2, p3, sum);
+        }
+
+        private static void DisplayMenu()
+        {
+            Console.WriteLine("1. Enter a number");
+            Console.WriteLine("2. Enter a name");
+            Console.WriteLine("3. Exit");
+        }
+
+        static int AddNumbers(int param1, int param2) //input parameters
+        {
+            int sum = param1 + param2;
+            return sum; //output parameter
+        }
+
+        static int AddNumbers(int param1, int param2, int param3) //input parameters
+        {
+            int sum = param1 + param2 + param3;
+            return sum; 	//output parameter
+        }
+        static double CalculateAverage(int param1, int param2, int param3) //input parameters
+        {
+            double avg = (param1 + param2 + param3) / (double)3;
+            return avg; 	//output parameter
+        }
+
+    }
+}
