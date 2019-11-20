@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+
+namespace Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            int[] myIntArray = new int[10];
+            for (int i = 0; i < myIntArray.Length; i++)
+            {
+                myIntArray[i] = i + 1;
+                Console.WriteLine("Element {0} is: {1}", i, myIntArray[i]);
+            }
+            Console.WriteLine("------------------------------------------------");
+
+            List<int> myIntList = new List<int>();
+            myIntList.Add(1);
+            myIntList.Add(2);
+            myIntList.Add(4);
+            myIntList.Add(8);
+            myIntList.Add(16);
+
+            foreach (var item in myIntList)
+            { 
+            
+                Console.WriteLine("Element {0} is: {1}", myIntList.IndexOf(item), item);
+            }
+        }
+    }
+}
