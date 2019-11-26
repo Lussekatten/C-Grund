@@ -1,0 +1,25 @@
+Golf 
+
+In this assignment you will try to simulate a simple golf game. 
+In the application, the user controls a golf player trying to get a golf ball to the cup/flag. 
+The position of the flag should be randomized (to a maximum distance of 1000 meters away from the player).
+Every swing you do with the club should take you closer to the flag. You simulate a swing (and the distance the ball moves) by:
+ - selecting the angle of the ball’s trajectory, 
+ - and the force you put behind the swing. 
+
+The game ends when the ball reaches the flag position (or is inside the cup).  
+
+Required Features: 
+• The player should be able to launch the golf ball from its initial location, with a given angle (degrees from the ground up) and velocity (m/s at the start of the ball’s arc).
+• The angle and velocity should determine how far the ball travels, reducing the distance between the starting location and the cup.
+• Gravity should affect the ball while it travels, which should be used to determine the arc of the ball (use the distance formula supplied).
+• The progress the player makes should be displayed between swings, showing the amount of swings the player has taken, as well as the distance to the cup.
+• If the ball travels beyond the cup, the new distance should still be positive.
+• When the ball has reached the goal (less than 1 meter from the flag), the game should end, displaying all swings taken, and how far the ball travelled each time.
+• If too many swings have been taken (more than 10 swings), the game should end, with a failure message. 
+
+Formulas:
+• Angle In Radians: (Math.PI / 180) * angle          
+• Distance: Math.Pow(velocity, 2) / GRAVITY * Math.Sin(2 * angleInRadians)  
+• Gravity is equal to 9.8  
+• Example: At 45 Degrees and 56 m/s, the ball should travel 320 meters
