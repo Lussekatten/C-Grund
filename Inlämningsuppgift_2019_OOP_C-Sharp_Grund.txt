@@ -1,0 +1,46 @@
+
+OOP C# grund - Inlämninsuppgift - Varuautomat
+---------------------------------------------
+Svårighetsgrad: Lätt till medelsvår
+I denna uppgift ska du skapa en varuautomat
+Följande funktioanlitet ska finnas med:
+  - Du ska kunna lägga varor i automaten. 
+    Produkterna ska vara av 3 kategorier: dryck (beverage), mat (foods), snack (snacks). Hitta själv 4 exempel på sådana av varje typ.
+  - Du ska kunna ta sätta in pengar i automaten
+  - Du ska kunna se vilka varor som finns tillgängliga
+  - När du sätter in pengar ska automaten endast acceptera giltiga valörer (1, 5, 10, 20 50, 100 och 200 kr)
+  - Om du inte har satt in tillräckligt med pengar, ska automaten underrätta dig via ett meddelande ifall du försöker köpa varor.
+  - Efter varje giltigt köp av en viss produkt, ska en lista presenteras på skärmen över hittils köpta produkter, hur mycket de kostat och hur mycket som finns kvar på ditt konto.
+  - När du avslutar programmet, ska automaten lämna tillbaka en summa pengar motsvarande ditt saldo minus summan av alla inköpta varor.
+  - Skapa en rapport i en textfil över inköpta varor, som ett slags kvitto. Rapporten ska innehålla: insatt belopp, lista över inköpta produkter och deras pris samt restbeloppet som returnerades.
+
+Tips: Använd en klass som styr logiken på samma sätt som vi gjorde i "Play golf" övningen. Skapa sedan andra nödvändiga klasser.
+      Collections av olika slag ska användas, dels för tillåtna penningvalörer, dels över produkter.
+      Tänk ut lämplig menysystem
+
+OOP C# grund - Inlämninsuppgift - Gladiator
+---------------------------------------------
+Svårighetsgrad: Medelsvår till svår
+
+I denna uppgift ska du skapa ett gladiatorspel, där hjälten slåss mot x antal motståndare, tills han blir besegrad.
+Följande funktioanlitet ska finnas med:
+  - Hjälten ska skapas med ett namn som användaren bestämmer vid programstart (inte hårdkodad). Övriga värden, som styrka (strength) och liv (health) ska slumpas fram
+  - Motståndarna ska också skapas med slumpmässiga värden för styrka och liv, dock på ett sätt som gör de underlägsna vår krigare, i alla fall i början.
+  - Användaren ska välja via menysystem när en ny runda ska börja. Rundan varar så länge en av partena fortfarande har liv kvar.
+  - Om hjälten besegras ska en rapport skapas över alla motståndare han vunnit över och antal poäng (100 poäng för level 1 motståndare, 200 poäng för level 2, osv).
+  - Måtständarna ska öka i svårighetsgrad var tredje runda. Hitta lämplig mekanism att implementera detta.
+  - Hjälten healar sig för 1 liv mellan varje runda med en ny motståndare.
+  - När en motständare besegras ska hjälten ibland kunna hitta följande: pengar ( i förm av mer poäng), eler ett magisk föremål som höjer hjältens liv, styrka, eller båda attributen på samma gång
+    T.ex. helm of vitality (ökar livet med 2 enheter), chestpiece of strength (ökar styrkan med 3 enheter).
+  - Man ska kunna se mellan varje runda, vilka prylar som hjälten samlat på sig, via ett menyalternativ (Inventory). Det ska bara finnas 1 av varje, dvs vår hjälte kan inte ha 2 hjälmar på sig samtidigt.
+    Strength prylar byter ut vitality prylar automatiskt, när dessa "hittas", och ifall värdet är högre än föregående värde
+  - Skapa en rapport i en textfil över besegrade motståndare.
+
+Tips: Använd en klass som styr logiken på samma sätt som vi gjorde i "Play golf" övningen. Skapa sedan andra nödvändiga klasser.
+      Minst en collection ska användas.
+      Tänk ut lämplig menysystem
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+Ni ska arbeta i grupper på 3-4 personer och välja en av ovanstående uppgifter.
+Redovisning ska ske senast tisdagen den 17:e december. Ni får välja om ni ska visa den till hela klassen eller bara till mig.
