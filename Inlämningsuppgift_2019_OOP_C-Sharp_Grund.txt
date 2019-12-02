@@ -44,3 +44,4 @@ Tips: Använd en klass som styr logiken på samma sätt som vi gjorde i "Play golf"
 -------------------------------------------------------------------------------------------
 Ni ska arbeta i grupper på 3-4 personer och välja en av ovanstående uppgifter.
 Redovisning ska ske senast tisdagen den 17:e december. Ni får välja om ni ska visa den till hela klassen eller bara till mig.
+Om ni inte är med i en grupp på 3 eller 4 får ni berätta detta för mig. Jag vill även veta vilken inlämninsuppgift ni valde att implementera.
