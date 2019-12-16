@@ -1,0 +1,15 @@
+List<string> lines = new List<string>();
+            string fileName = "Example.txt";
+
+string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(path, fileName)))
+            {
+                foreach (string line in lines)
+                {
+                    outputFile.WriteLine(line);
+                }
+            }
+
+            Console.WriteLine("\nAll text saved in the file: {0} located on your Desktop", fileName);
+
+            Console.Read();
